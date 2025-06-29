@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "pages/api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "build": {
+    "env": {
+      "DATABASE_PATH": "./data/news.db"
+    }
+  }
+} 
