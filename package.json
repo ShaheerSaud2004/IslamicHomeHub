@@ -10,15 +10,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:static": "DISABLE_DB=true next build",
     "start": "next start",
     "lint": "next lint",
     "scrape": "node scripts/scraper.js",
     "setup-db": "node scripts/setup-database.js",
     "init-db": "node scripts/init-sqlite.js",
-    "init-users": "node scripts/init-user-tables.js",
+    "init-user-tables": "node scripts/init-user-tables.js",
     "send-newsletter": "node scripts/send-newsletter.js",
-    "populate": "node scripts/background-populate.js",
+    "populate": "node scripts/background-populate.js once",
     "background-populate": "node scripts/background-populate.js start",
     "populate-status": "node scripts/background-populate.js status"
   },
